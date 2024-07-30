@@ -9,13 +9,10 @@ function mathOperations(num1 = 10, num2 = 4) {
   console.log("square root =>", Math.sqrt(num2));
 };
 
-function typeOperations(result) {
-  result = "string";
-  console.log("To string =>", result);
-  result = 2;
-  console.log("To number =>", result);
-  result = !!result;
-  console.log("To boolean =>", result);
+function typeOperations(result = 10) {
+  console.log("To string =>", result.toString());
+  console.log("To number =>", Number(result));
+  console.log("To boolean =>", !!result);
 };
 
 mathOperations();
