@@ -10,9 +10,9 @@ function mathOperations(num1 = 10, num2 = 4) {
 };
 
 function typeOperations(result = 10) {
-  console.log("To string =>", result.toString());
+  console.log("To string =>", String(result));
   console.log("To number =>", Number(result));
-  console.log("To boolean =>", !!result);
+  console.log("To boolean =>", Boolean(result));
 };
 
 mathOperations();
