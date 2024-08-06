@@ -1,10 +1,12 @@
 "use strict";
 
 function recursiveOddSumTo(number) {
-  if(number <= 0) {
+  if (number % 2 !== 0) {
+    return number + recursiveOddSumTo(number - 1)
+  } else if (number <= 0) {
     return 0;
   } else {
-    return (number % 2 !== 0 ? number : 0) + recursiveOddSumTo(number - 1)
+    return recursiveOddSumTo(number - 1)
   }
 };
   
